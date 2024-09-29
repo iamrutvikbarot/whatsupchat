@@ -7,7 +7,7 @@ const withAuth = (WrappedComponent) => {
     const router = useRouter();
 
     useEffect(() => {
-      const userData = localStorage.getItem("user");
+      const userData = localStorage.getItem("userData");
       if (!userData) {
         // Redirect to login page if not authenticated
         router.push("/signup");
